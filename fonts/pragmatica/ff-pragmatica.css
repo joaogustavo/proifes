@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'pragmatica_condbold';
+	src: url('pragmaticacondbold-webfont.woff2') format('woff2'),  url('pragmaticacondbold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'pragmatica_condmedium';
+	src: url('pragmaticacondmedium-webfont.woff2') format('woff2'),  url('pragmaticacondmedium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'pragmatica_condlight';
+	src: url('pragmaticacondlight-webfont.woff2') format('woff2'),  url('pragmaticacondlight-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

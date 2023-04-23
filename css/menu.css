@@ -1,0 +1,336 @@
+/*
+------------------- MENU PRINCIPAL DESKTOP -------------------
+*/
+.navegacao { /* container geral */
+	background: #0095da;
+	display: block;
+	float: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+	height: 61px;
+	letter-spacing: normal;
+	line-height: 2rem;
+	margin: 0 auto;
+	max-height: 61px;
+	max-width: 2000px;
+	padding: 0;
+	position: relative;
+	text-shadow: 0.97px 1.749px 0.97px rgba(47, 128, 166, 0.48);
+	width: 100%;
+	z-index: 200 !important;
+}
+.navegacao ul { /* container centralizado */
+	display: flex;
+	flex-wrap: wrap;
+	float: none;
+	height: 61px;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	max-width: 1140px;
+	padding: 0 2%;
+	position: relative;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: auto;
+	-webkit-margin-end: auto;
+	-webkit-padding-start: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 2;
+}
+.navegacao ul li { /* item */
+	display: inline-block;
+	position: relative;
+}
+.navegacao ul li a { /* menu link */
+	color: #ffffff;
+	display: block;
+	margin: 0;
+	padding: 21px 15px;
+	position: relative;
+	text-decoration: none;
+}
+.navegacao ul li:first-child a { /* retirando margem esquerda primeiro item */
+	margin-left: 0 !important;
+}
+.navegacao ul li:last-child a { /* retirando margem direita ultimo item */
+	margin-right: 0 !important;
+}
+.navegacao ul li a:hover,  /* menu link hover */ .navegacao ul li a:focus { /* menu link focus */
+	color: #07c55a;
+	outline: none !important;
+}
+
+/*
+-------------- MENU PRINCIPAL DESKTOP TRANSICAO SCROLL -------------
+*/
+@media screen and (min-width:768px) {
+.navegacao-fixa {
+	background: #0095da;
+	font-size: 1.7rem;
+	height: 34px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	width: 100%;
+}
+.navegacao-fixa ul li a {
+	margin: 0;
+	padding: 7px 11px;
+}
+}
+/*
+-------------------- MENU DE PAGINAS INTERNAS ----------------------
+*/
+.menu-interno {
+	margin: 0;
+	padding: 0;
+	padding-right: 15px;
+}
+.menu-interno ul {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	list-style: none;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: auto;
+	-webkit-margin-end: auto;
+	-webkit-padding-start: 0;
+}
+.menu-interno ul li {
+	border-bottom: dotted 1px #969BC1;
+	margin: 2px 0;
+}
+.menu-interno ul li a {
+	color: #008b9d;
+	display: block;
+	padding: 2px 4px;
+	width: 100%;
+}
+.menu-interno ul li a:hover, .menu-interno ul li a:focus {
+	background: #4eb4af;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/*
+----------------- MENU AJUSTES DE MEDIA QUERIES ----------------
+*/
+@media screen and (max-width:1160px) {
+.navegacao {
+	font-size: 2rem;
+}
+.navegacao ul li a { /* menu link */
+	padding-left: 10px;
+	padding-right: 10px;
+}
+}
+
+@media screen and (max-width:1046px) {
+.navegacao { /* container geral */
+	font-size: 1.6rem;
+}
+.navegacao ul li a { /* menu link */
+	padding-left: 11px;
+	padding-right: 11px;
+}
+}
+
+@media screen and (max-width:882px) {
+.navegacao { /* container geral */
+	font-size: 1.5rem;
+}
+.navegacao ul li a { /* menu link */
+	padding-left: 7px;
+	padding-right: 7px;
+}
+}
+@media screen and (max-width:780px) and (min-width:768px) {
+.navegacao { /* container geral */
+	font-size: 1.4rem;
+}
+}
+/*
+------------------------- MENU MOBILE --------------------------
+*/
+@media screen and (max-width: 767px) and (min-width: 176px) {
+.navegacao {
+	display: none;
+}
+.modaal-content-container .lista-menu a {
+	color: #0095da;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.3rem;
+	font-weight: 700;
+}
+/* menu movel */
+.lista-menu {
+	list-style: none;
+	margin-bottom: 0px;
+	margin-top: 30px;
+	padding-left: 0px;
+	text-align: center;
+}
+.lista-menu li a {
+	color: #0095da;
+	display: block;
+	letter-spacing: -.02rem;
+	line-height: 4rem;
+	margin-top: .2rem;
+	padding: .01rem 1rem;
+	vertical-align: middle;
+}
+.lista-menu li a:hover {
+	background: #0095da;
+	color: #ffffff;
+	text-decoration: none;
+}
+/* botao abrir menu*/
+.ic-menu {
+	background: #0096dd;
+	border-radius: 100%;
+	color: #fff;
+	cursor: pointer;
+	height: 50px;
+	opacity: 1;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	transition: all 0.2s ease-in-out;
+	width: 50px;
+}
+.ic-menu:focus, .menu-abre:hover {
+	background: #afb7bc;
+	color: #ffffff;
+	outline: none;
+}
+.ic-menu:focus:before,
+.ic-menu:focus:after,
+.ic-menu:hover:before,
+.ic-menu:hover:after {
+	background: transparent;
+}
+.ic-menu span {
+	border: 0 !important;
+	clip: rect(1px 1px 1px 1px);
+	/* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px !important;
+	overflow: hidden;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+}
+.ic-menu:before {
+	content: '\f0c9';
+	display: block;
+	font-family: 'FontAwesome';
+	font-size: 3rem;
+	height: 22px;
+	left: 12px;
+	position: absolute;
+	top: 9px;
+	width: 4px;
+}
+.ic-menu:after {
+	content:'MENU';
+	font-family: 'Roboto', sans-serif;
+	font-size: .9rem;
+	font-weight: 500;
+	height: 8px;
+	left: 12px;
+	position: absolute;
+	top: 7px;
+	width: 4px;
+}
+}
+/*
+------------------------- pagina institucional -------------------------
+*/
+.pg-institucional .navegacao ul li .menu-institucional {
+	color: #07c55a;
+	position: relative;
+}
+.pg-institucional .modaal-content-container a.menu-institucional {
+	background: #07c55a;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+------------------------- pagina carreiras docentes -------------------------
+*/
+.pg-carreiras .navegacao ul li .menu-carreiras {
+	color: #07c55a;
+	position: relative;
+}
+.pg-carreiras .modaal-content-container a.menu-carreiras {
+	background: #07c55a;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+------------------------- pagina comunicacao -------------------------
+*/
+.pg-comunicacao .navegacao ul li .menu-comunicacao {
+	color: #07c55a;
+	position: relative;
+}
+.pg-comunicacao .modaal-content-container a.menu-comunicacao {
+	background: #07c55a;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+------------------------- pagina agenda -------------------------
+*/
+.pg-agenda .navegacao ul li .menu-agenda {
+	color: #07c55a;
+	position: relative;
+}
+.pg-agenda .modaal-content-container a.menu-agenda {
+	background: #07c55a;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+------------------------- pagina seja um filiado -------------------------
+*/
+.pg-filiado .navegacao ul li .menu-filiado {
+	color: #07c55a;
+	position: relative;
+}
+.pg-filiado .modaal-content-container a.menu-filiado {
+	background: #07c55a;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+------------------------- pagina sindicatos filiados -------------------------
+*/
+.pg-sindicatos .navegacao ul li .menu-sindicatos {
+	color: #07c55a;
+	position: relative;
+}
+.pg-sindicatos .modaal-content-container a.menu-sindicatos {
+	background: #07c55a;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+------------------------- pagina contato -------------------------
+*/
+.pg-contato .navegacao ul li .menu-contato {
+	color: #07c55a;
+	position: relative;
+}
+.pg-contato .modaal-content-container a.menu-contato {
+	background: #07c55a;
+	color: #ffffff;
+	pointer-events: none;
+}

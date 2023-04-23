@@ -1,0 +1,50 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+/*
+------------------ FONT AWESOME --------------------------
+	font-family: 'FontAwesome'
+*/
+/*
+/****************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+/*
+---------------- ROBOTO THIN -------------------
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+*/
+/*
+---------------- ROBOTO LIGHT -------------------
+	font-weight: 300;
+*/
+/*
+---------------- ROBOTO NORMAL-------------------
+	font-weight: 400;
+*/
+/*
+---------------- ROBOTO MEDIUM ------------------
+	font-weight: 500;
+*/
+/*
+---------------- ROBOTO BOLD --------------------
+	font-weight: 700;
+*/
+/*
+---------------- ROBOTO ULTRABOLD ---------------
+	font-weight: 900;
+*/
+/****************************************************************************************/
+@import url("../fonts/proifes/ff-proifes.css");
+/*
+---------------- PROIFES ------------------------
+	font-family: "proifes";
+*/
+/****************************************************************************************/
+@import url("../fonts/pragmatica/ff-pragmatica.css");
+/*
+------------ PRAGMATICA COND MEDIUM -------------
+	font-family: 'pragmatica_condmedium';
+*/
+/*
+------------ PRAGMATICA COND BOLD -------------
+	font-family: 'pragmatica_condbold';
+*/
+/****************************************************************************************/
